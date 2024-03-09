@@ -11,7 +11,8 @@ const [password,setPassword]=useState('');
 const loginUser=async(e)=>{
 e.preventDefault();
 const res=await fetch("https://backendblood.onrender.com/signin",{
-method:"POST",
+mode: 'no-cors',
+  method:"POST",
 credentials:"include",
 headers:{
 "Content-Type":"application/json"
