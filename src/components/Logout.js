@@ -6,7 +6,7 @@ const Logout=()=>{
     const {state,dispatch}=useContext(UserContext);
     const navigate=useNavigate();
     useEffect(()=>{
-    fetch("/logout",{
+    fetch("https://backendblood.onrender.com/logout",{
 method:"GET",
 headers:{
 Accept:"Application/json",
@@ -16,7 +16,7 @@ Accept:"Application/json",
 credentials:"include"
     }).then((res)=>{
         dispatch({type:"USER",payload:false});
-        navigate("/login",{replace:true});
+        navigate("https://backendblood.onrender.com/login",{replace:true});
 if(!res.status===200){
 const error=new Error(res.error);
 throw error;
