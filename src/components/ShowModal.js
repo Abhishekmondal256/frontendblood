@@ -62,6 +62,7 @@ const handleUpdate=async(e)=>{
       formData.append("cpassword",userUpdate.cpassword);}
     /*formData.append("cpassword",userUpdate.cpassword);*/
   const res=await fetch("/update",{
+    mode: 'no-cors',
     method: 'PUT',
     body:formData
   }).then((res)=>{res.json();
