@@ -31,14 +31,14 @@ else{
 return(
 <>
 <li className="nav-item active">
-        <NavLink className="nav-link" to="https://backendblood.onrender.com/">Home </NavLink>
+        <NavLink className="nav-link" to="/">Home </NavLink>
       </li>
       
       <li className="nav-item">
-        <NavLink  className="nav-link" to="https://backendblood.onrender.com/login">Login</NavLink>
+        <NavLink  className="nav-link" to="/login">Login</NavLink>
       </li>
       <li className="nav-item">
-        <NavLink  className="nav-link" to="https://backendblood.onrender.com/signup">Register</NavLink>
+        <NavLink  className="nav-link" to="/signup">Register</NavLink>
       </li>
       
 
