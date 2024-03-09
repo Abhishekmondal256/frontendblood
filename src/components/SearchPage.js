@@ -46,7 +46,7 @@ console.log(data.profpic);
             
                 catch(err){
                     console.log(err);
-                    navigate("https://backendblood.onrender.com/",{replace:true});
+                    navigate("/",{replace:true});
                     }
         
         
