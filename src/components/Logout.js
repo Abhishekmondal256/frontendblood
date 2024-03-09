@@ -16,7 +16,7 @@ Accept:"Application/json",
 credentials:"include"
     }).then((res)=>{
         dispatch({type:"USER",payload:false});
-        navigate("https://backendblood.onrender.com/login",{replace:true});
+        navigate("/login",{replace:true});
 if(!res.status===200){
 const error=new Error(res.error);
 throw error;
