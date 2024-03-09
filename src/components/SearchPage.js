@@ -21,7 +21,7 @@ const SearchPage = () => {
         
         try{
            
-                const res=await fetch("https://backendblood.onrender.com/searchpage",{
+                const res=await fetch("/searchpage",{
                 mode: 'no-cors',
                     method:"GET",
                 headers:{
@@ -65,7 +65,7 @@ console.log(data.profpic);
                const postSearch=async(e)=>{
                 e.preventDefault();
                 const { state, city,bloodgrp}=search;
-                const res=await fetch("https://backendblood.onrender.com/searchpage",{
+                const res=await fetch("/searchpage",{
                 method:"POST",
                 headers:{
               "Content-Type":"application/json"
