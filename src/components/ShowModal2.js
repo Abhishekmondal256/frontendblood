@@ -5,7 +5,7 @@ const MyModal2=({closeModal,pup})=>{
     const navigate=useNavigate();
 const handleDelete=async(e)=>{
     
-    const response = await fetch("/delete", {
+    const response = await fetch("https://backendblood.onrender.com/delete", {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json'
@@ -13,7 +13,7 @@ const handleDelete=async(e)=>{
         body: JSON.stringify({ id:pup })
       }).then(()=>{
        console.log("successfull");
-       navigate("/logout",{replace:true});
+       navigate("https://backendblood.onrender.com/logout",{replace:true});
 
        }
       ).catch((err)=>
