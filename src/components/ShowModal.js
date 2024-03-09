@@ -61,7 +61,7 @@ const handleUpdate=async(e)=>{
     if(userUpdate.cpassword!==null){
       formData.append("cpassword",userUpdate.cpassword);}
     /*formData.append("cpassword",userUpdate.cpassword);*/
-  const res=await fetch("/update",{
+  const res=await fetch("https://backendblood.onrender.com/update",{
     mode: 'no-cors',
     method: 'PUT',
     body:formData
