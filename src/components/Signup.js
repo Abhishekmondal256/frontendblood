@@ -59,8 +59,7 @@ if (!validateEmail(user.email)) {
    formData.append("city",user.city.toLowerCase());
    formData.append("password",user.password);
    formData.append("cpassword",user.cpassword);
-   const res=await fetch("
-                         /register",{
+   const res=await fetch("/register",{
 mode: 'no-cors',
      method:"POST",
 body:formData
