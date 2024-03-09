@@ -23,6 +23,7 @@ const About = ()=>{
 const callAboutPage=async()=>{
 try{
 const res=await fetch("https://backendblood.onrender.com/about",{
+    mode: 'no-cors',
 method:"GET",
 headers:{
 
