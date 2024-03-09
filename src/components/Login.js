@@ -10,6 +10,7 @@ const [email,setEmail]=useState('');
 const [password,setPassword]=useState('');
 const loginUser=async(e)=>{
 e.preventDefault();
+   console.log("me yaha pahuch");
 const res=await fetch("/signin",{
 mode: 'no-cors',
   method:"POST",
@@ -27,6 +28,7 @@ body:JSON.stringify({
 
 const data=res.json();
 if(res.status===400 || !data ){
+   console.log("me y");
   window.alert("Invalid credentials");
 }else{
 
