@@ -22,7 +22,8 @@ const SearchPage = () => {
         try{
            
                 const res=await fetch("https://backendblood.onrender.com/searchpage",{
-                method:"GET",
+                mode: 'no-cors',
+                    method:"GET",
                 headers:{
                 
                    Accept:"application/json",
