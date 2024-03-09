@@ -65,7 +65,8 @@ mode: 'no-cors',
 body:formData
 
    }).then((res)=>{res.json(); if(res.status===422){
-    window.alert("incomplete or wrong submission");
+      console.log("me yaha hu");
+     window.alert("incomplete or wrong submission");
     
   }}).then((data)=>{
          
@@ -73,6 +74,7 @@ body:formData
     
     navigate("/login",{replace:true});}).
     catch((err)=>{
+      console.log("me yaha");
       window.alert("registration failed");
       console.log(err);
    });
