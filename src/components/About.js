@@ -22,7 +22,7 @@ const About = ()=>{
    }
 const callAboutPage=async()=>{
 try{
-const res=await fetch("/about",{
+const res=await fetch("https://backendblood.onrender.com/about",{
 method:"GET",
 headers:{
 
@@ -45,7 +45,7 @@ if(!(await res).status===200){
 }
 catch(err){
 console.log(err);
-navigate("/login",{replace:true});
+navigate("https://backendblood.onrender.com/login",{replace:true});
 }
 }
 
@@ -61,7 +61,7 @@ callAboutPage();
 <form method="GET">
 <div className="row" id="row">
 <div className="col">
-<img id="abtimage" src={"http://localhost:5000/public/images/"+userData.profpic} alt="abhi" width="150px" height="170px"/> 
+<img id="abtimage" src={"https://backendblood.onrender.com/public/images/"+userData.profpic} alt="abhi" width="150px" height="170px"/> 
 
 </div>
 <div className="col2">
