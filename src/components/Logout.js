@@ -6,7 +6,7 @@ const Logout=()=>{
     const {state,dispatch}=useContext(UserContext);
     const navigate=useNavigate();
     useEffect(()=>{
-    fetch("https://backendblood.onrender.com/logout",{
+    fetch("/logout",{
 mode: 'no-cors',
         method:"GET",
 headers:{
