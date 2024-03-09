@@ -21,7 +21,7 @@ const SearchPage = () => {
         
         try{
            
-                const res=await fetch("/searchpage",{
+                const res=await fetch("https://backendblood.onrender.com/searchpage",{
                 method:"GET",
                 headers:{
                 
@@ -45,7 +45,7 @@ console.log(data.profpic);
             
                 catch(err){
                     console.log(err);
-                    navigate("/",{replace:true});
+                    navigate("https://backendblood.onrender.com/",{replace:true});
                     }
         
         
@@ -64,7 +64,7 @@ console.log(data.profpic);
                const postSearch=async(e)=>{
                 e.preventDefault();
                 const { state, city,bloodgrp}=search;
-                const res=await fetch("/searchpage",{
+                const res=await fetch("https://backendblood.onrender.com/searchpage",{
                 method:"POST",
                 headers:{
               "Content-Type":"application/json"
@@ -173,7 +173,7 @@ console.log(data.profpic);
                             <div key={id}
                    className="singleDestination">
                     <div className="imageDiv">
-                    <img src={"http://localhost:5000/public/images/"+ curElem.profpic} alt="h" />
+                    <img src={"https://backendblood.onrender.com/public/images/"+ curElem.profpic} alt="h" />
                          </div>
                       <div className="cardInfo">
                          
@@ -255,7 +255,7 @@ console.log(data.profpic);
                             <div key={id}
                    className="singleDestination">
                     <div className="imageDiv">
-                    <img src={"http://localhost:5000/public/images/"+ curElem.profpic} alt="h" />
+                    <img src={"https://backendblood.onrender.com/public/images/"+ curElem.profpic} alt="h" />
                          </div>
                       <div className="cardInfo">
                          
