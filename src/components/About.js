@@ -22,7 +22,7 @@ const About = ()=>{
    }
 const callAboutPage=async()=>{
 try{
-const res=await fetch("https://backendblood.onrender.com/about",{
+const res=await fetch("/about",{
 method:"GET",
 headers:{
 
