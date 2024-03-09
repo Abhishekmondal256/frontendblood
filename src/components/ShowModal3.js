@@ -22,7 +22,7 @@ const handleImageUpdate=(e)=>{
             formData.append("_id",pup);
             if(userUpdate.profpic!==""){
             formData.append("profpic",userUpdate.profpic,userUpdate.profpic.name);
-            const res=await fetch("https://backendblood.onrender.com/update2",{
+            const res=await fetch("/update2",{
              mode: 'no-cors',
                 method: 'PUT',
               body:formData
