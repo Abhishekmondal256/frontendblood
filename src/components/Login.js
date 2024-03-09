@@ -10,7 +10,7 @@ const [email,setEmail]=useState('');
 const [password,setPassword]=useState('');
 const loginUser=async(e)=>{
 e.preventDefault();
-const res=await fetch("/signin",{
+const res=await fetch("https://backendblood.onrender.com/signin",{
 method:"POST",
 credentials:"include",
 headers:{
@@ -31,7 +31,7 @@ if(res.status===400 || !data ){
 
   window.alert("Login successfull");
   
-  navigate("/",{replace:true});
+  navigate("https://backendblood.onrender.com/",{replace:true});
   dispatch({type:"USER",payload:true})
 }
 
