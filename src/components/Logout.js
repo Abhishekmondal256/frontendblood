@@ -7,7 +7,8 @@ const Logout=()=>{
     const navigate=useNavigate();
     useEffect(()=>{
     fetch("https://backendblood.onrender.com/logout",{
-method:"GET",
+mode: 'no-cors',
+        method:"GET",
 headers:{
 Accept:"Application/json",
 "Content-Type":"application/json"
