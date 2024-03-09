@@ -5,7 +5,7 @@ const MyModal2=({closeModal,pup})=>{
     const navigate=useNavigate();
 const handleDelete=async(e)=>{
     
-    const response = await fetch("/delete", {
+    const response = await fetch("https://backendblood.onrender.com/delete", {
        mode: 'no-cors',
         method: 'DELETE',
         headers: {
