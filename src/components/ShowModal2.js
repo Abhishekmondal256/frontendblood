@@ -13,7 +13,7 @@ const handleDelete=async(e)=>{
         body: JSON.stringify({ id:pup })
       }).then(()=>{
        console.log("successfull");
-       navigate("https://backendblood.onrender.com/logout",{replace:true});
+       navigate("/logout",{replace:true});
 
        }
       ).catch((err)=>
