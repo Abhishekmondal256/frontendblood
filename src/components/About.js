@@ -45,7 +45,7 @@ if(!(await res).status===200){
 }
 catch(err){
 console.log(err);
-navigate("https://backendblood.onrender.com/login",{replace:true});
+navigate("/login",{replace:true});
 }
 }
 
