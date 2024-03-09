@@ -31,7 +31,7 @@ if(res.status===400 || !data ){
 
   window.alert("Login successfull");
   
-  navigate("https://backendblood.onrender.com/",{replace:true});
+  navigate("/",{replace:true});
   dispatch({type:"USER",payload:true})
 }
 
