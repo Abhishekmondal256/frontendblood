@@ -10,7 +10,7 @@ const [email,setEmail]=useState('');
 const [password,setPassword]=useState('');
 const loginUser=async(e)=>{
 e.preventDefault();
-const res=await fetch("https://backendblood.onrender.com/signin",{
+const res=await fetch("/signin",{
 mode: 'no-cors',
   method:"POST",
 credentials:"include",
