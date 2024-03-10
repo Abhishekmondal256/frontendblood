@@ -70,7 +70,7 @@ body:formData
      if(res.status===422){
       console.log("me yaha hu");
      window.alert("incomplete or wrong submission");
-    
+    return data;
   }}).then((data)=>{
          
     
