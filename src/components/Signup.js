@@ -60,7 +60,7 @@ if (!validateEmail(user.email)) {
    formData.append("password",user.password);
    formData.append("cpassword",user.cpassword);
    const res=await fetch("https://backendblood.onrender.com/register",{
-mode: 'no-cors',
+
      method:"POST",
 body:formData
 
