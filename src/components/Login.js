@@ -35,7 +35,8 @@ if(res.status===400 || !data ){
   window.alert("Login successfull");
   
   navigate("/",{replace:true});
-  dispatch({type:"USER",payload:true})
+  dispatch({type:"USER",payload:true});
+  console.log("me last");
 }
 
 }
