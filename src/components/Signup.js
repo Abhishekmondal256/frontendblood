@@ -66,6 +66,7 @@ mode:"no-cors",
 body:formData
 
    }).then((res)=>{
+     console.log(res);
      data=res.json();
      if(res.status===422){
       console.log("me yaha hu");
