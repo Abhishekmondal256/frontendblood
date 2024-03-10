@@ -64,7 +64,9 @@ mode:"no-cors",
      method:"POST",
 body:formData
 
-   }).then((res)=>{res.json(); if(res.status===422){
+   }).then((res)=>{
+     const data=res.json();
+     if(res.status===422){
       console.log("me yaha hu");
      window.alert("incomplete or wrong submission");
     
