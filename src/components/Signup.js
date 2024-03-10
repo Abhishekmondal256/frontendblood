@@ -46,6 +46,7 @@ if (!validateEmail(user.email)) {
       window.alert("Invalid email format");
       return;
     }
+    let data;
    const formData=new FormData();
    formData.append("name",user.name.toLowerCase());
    formData.append("email",user.email);
@@ -65,7 +66,7 @@ mode:"no-cors",
 body:formData
 
    }).then((res)=>{
-     const data=res.json();
+     data=res.json();
      if(res.status===422){
       console.log("me yaha hu");
      window.alert("incomplete or wrong submission");
