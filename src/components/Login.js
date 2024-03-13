@@ -26,7 +26,7 @@ headers:{
 //   password:password
 // })
 body:{
-"kya be" 
+"name":"kya be" 
 }
 
 });
