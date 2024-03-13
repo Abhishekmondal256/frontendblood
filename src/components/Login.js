@@ -21,13 +21,11 @@ headers:{
 "Content-Type":"application/json"
 
 },
-// body:JSON.stringify({
-//  email:email,
-//   password:password
-// })
-body:{
-"name":"kya be" 
-}
+body:JSON.stringify({
+ email:email,
+  password:password
+})
+
 
 });
 
