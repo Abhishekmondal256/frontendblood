@@ -38,9 +38,9 @@ credentials:"include"
 });
    console.log(res);
 const data=await res.json();
-console.log(data);
+
 setUserData(data);
-   console.log(userData);
+   console.log(userData.profpic);
 if(!(await res).status===200){
    const error=new Error(res.error);
    throw error;
@@ -66,7 +66,7 @@ callAboutPage();
 <form method="GET">
 <div className="row" id="row">
 <div className="col">
-    {userData.profpic && <img id="abtimage" src={"https://backendblood.onrender.com/public/images/"+userData.profpic} alt="abhi" width="150px" height="170px"/> }
+    {userData.profpic && <img id="abtimage" src={"https://backendblood.onrender.com/public/images/"+userData.profpic} alt="abhi" width="150px" height="170px" crossorigin="anonymous"/> }
 
 </div>
 <div className="col2">
