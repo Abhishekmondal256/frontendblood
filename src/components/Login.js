@@ -22,7 +22,8 @@ headers:{
 
 },
 body:JSON.stringify({
- email,password 
+ email:email,
+  password:password
 })
 
 
