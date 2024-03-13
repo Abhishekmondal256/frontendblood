@@ -16,11 +16,11 @@ e.preventDefault();
 const res=await fetch("https://backendblood.onrender.com/signin",{
 mode:"no-cors",
   method:"POST",
-// credentials:"include",
-// headers:{
-// "Content-Type":"application/json"
+credentials:"include",
+headers:{
+"Content-Type":"application/json"
 
-// },
+},
 body:JSON.stringify({
  email:email,
   password:password
