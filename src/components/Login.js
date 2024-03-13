@@ -14,7 +14,7 @@ e.preventDefault();
   console.log(email);
   console.log(password);
 const res=await fetch("https://backendblood.onrender.com/signin",{
-mode:"no-cors",
+
   method:"POST",
 credentials:"include",
 headers:{
