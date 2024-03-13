@@ -28,7 +28,8 @@ body:JSON.stringify({
 
 
 });
-
+  console.log("pi");
+console.log(res);
 const data=res.json();
   console.log("data");
   console.log(data);
