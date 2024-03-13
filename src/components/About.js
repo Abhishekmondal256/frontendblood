@@ -28,7 +28,7 @@ const res=await fetch("https://backendblood.onrender.com/about",{
 method:"GET",
 headers:{
 
-   // Accept:"application/json",
+   Accept:"application/json",
    "Content-Type":"application/json"
   
 },
@@ -36,9 +36,11 @@ credentials:"include"
 
 
 });
+   console.log(res);
 const data=await res.json();
 console.log(data);
 setUserData(data);
+   console.log(userData);
 if(!(await res).status===200){
    const error=new Error(res.error);
    throw error;
