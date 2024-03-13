@@ -11,6 +11,8 @@ const [password,setPassword]=useState('');
 const loginUser=async(e)=>{
 e.preventDefault();
    console.log("me yaha pahuch");
+  console.log(email);
+  console.log(password);
 const res=await fetch("https://backendblood.onrender.com/signin",{
 mode:"no-cors",
   method:"POST",
