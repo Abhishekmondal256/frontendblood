@@ -27,6 +27,8 @@ body:JSON.stringify({
 });
 
 const data=res.json();
+  console.log("data");
+  console.log(data);
 if(res.status===400 || !data ){
    console.log("me y");
   window.alert("Invalid credentials");
