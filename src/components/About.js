@@ -66,7 +66,7 @@ callAboutPage();
 <form method="GET">
 <div className="row" id="row">
 <div className="col">
-    {userData.profpic!=undefined && userData.profpic!=null && <img id="abtimage" src={"https://backendblood.onrender.com/public/images/"+userData.profpic} alt="abhi" width="150px" height="170px"/> }
+    {userData.profpic && <img id="abtimage" src={"https://backendblood.onrender.com/public/images/"+userData.profpic} alt="abhi" width="150px" height="170px"/> }
 
 </div>
 <div className="col2">
