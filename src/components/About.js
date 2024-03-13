@@ -95,7 +95,7 @@ callAboutPage();
 <div className="cole1" id="cole1">
 <div className="rowp" id="rowp">
 <div className="colp">
-<label >ID:</label>
+<span>ID:</span>
 </div>
    <div className="colp">
     <p>{userData._id}</p>
@@ -105,7 +105,7 @@ callAboutPage();
 
 <div className="rowp" id="rowp">
 <div className="colp">
-<label >Blood Grp :</label>
+<span >Blood Grp :</span>
 </div>
    <div className="colp">
     <p>{userData.bloodgrp}</p>
@@ -114,7 +114,7 @@ callAboutPage();
 </div>
 <div className="rowp" id="rowp">
 <div className="colp">
-<label >Gender :</label>
+<span>Gender :</span>
 </div>
    <div className="colp">
     <p>{userData.gender}</p>
@@ -123,7 +123,7 @@ callAboutPage();
 </div>
 <div className="rowp" id="rowp">
 <div className="colp">
-<label >Age :</label>
+<span>Age :</span>
 </div>
    <div className="colp">
     <p>{userData.age}</p>
@@ -136,7 +136,7 @@ callAboutPage();
 <div className="cole2" id="cole2">
 <div className="rowp" id="rowp">
 <div className="colp">
-<label >Phone No :</label>
+<span>Phone No :</span>
 </div>
    <div className="colp">
     <p>{userData.phone}</p>
@@ -145,7 +145,7 @@ callAboutPage();
 </div>
 <div className="rowp" id="rowp">
 <div className="colp">
-<label >Last Donated :</label>
+<span>Last Donated :</span>
 </div>
    <div className="colp">
     <p>{userData.ldate}</p>
@@ -155,7 +155,7 @@ callAboutPage();
 
 <div className="rowp" id="rowp">
 <div className="colp">
-<label >State :</label>
+<span>State :</span>
 </div>
    <div className="colp">
     <p>{userData.state}</p>
@@ -164,7 +164,7 @@ callAboutPage();
 </div>
 <div className="rowp" id="rowp">
 <div className="colp">
-<label >City :</label>
+<span >City :</span>
 </div>
    <div className="colp">
     <p>{userData.city}</p>
