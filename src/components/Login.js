@@ -60,7 +60,7 @@ return (
  
  <div className="form-groupe">
  <div id="labl">Email</div>
- <div id="lab2l">  <label htmlFor="email" id="email">
+ <div id="lab2l">  <label for="email" >
    <i class="zmdi zmdi-email "></i>
    </label>
    <input type="email" name="email" id="email" autoComplete="off" value={email} onChange={(e)=> setEmail(e.target.value)} placeholder="enter your email"/>
@@ -70,7 +70,7 @@ return (
  
  <div className="form-groupe">
  <div id="labl">Password</div>
- <div id="lab2l">  <label htmlFor="password" id="password">
+ <div id="lab2l">  <label for="password" >
    <i class="zmdi zmdi-gps-dot"></i>
    </label>
    <input type="password" name="password" id="password" autoComplete="off" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder="enter your password"/>
