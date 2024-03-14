@@ -62,7 +62,7 @@ const handleUpdate=async(e)=>{
       formData.append("cpassword",userUpdate.cpassword);}
     /*formData.append("cpassword",userUpdate.cpassword);*/
   const res=await fetch("https://backendblood.onrender.com/update",{
-    mode: 'no-cors',
+   
     method: 'PUT',
     body:formData
   }).then((res)=>{res.json();
@@ -97,7 +97,7 @@ return ReactDOM.createPortal (
 <div className="modal-container">
 <form method="PUT" className="register-form" id="register-form updateform">
      <div className="form-group newformgroup"><div id="lab newlab">Name</div>
-      <div id="lab2"> <label htmlFor="name">
+      <div id="lab2"> <label for="name">
        <i class="zmdi zmdi-account "></i>
         </label>
        <input type="text" name="name" id="name" autoComplete="off" value={userUpdate.name} onChange={handleInputsUpdate} placeholder="enter your name"/>
@@ -105,7 +105,7 @@ return ReactDOM.createPortal (
        </div> </div>
      
      <div className="form-group newformgroup"><div id="lab">Email</div>
-      <div id="lab2"> <label htmlFor="email">
+      <div id="lab2"> <label for="email">
        <i class="zmdi zmdi-email "></i>
         </label>
        <input type="email" name="email" id="email" autoComplete="off" value={userUpdate.email} onChange={handleInputsUpdate}  placeholder="enter your email"/>
@@ -113,21 +113,21 @@ return ReactDOM.createPortal (
       </div>  </div>
       
      <div className="form-group newformgroup"><div id="lab">Phone</div>
-      <div id="lab2"> <label htmlFor="phone">
+      <div id="lab2"> <label for="phone">
        <i class="zmdi zmdi-phone-in-talk "></i>
         </label>
        <input type="number" name="phone" id="phone" autoComplete="off" value={userUpdate.phone} onChange={handleInputsUpdate}  placeholder="enter your phone number"/>
     
       </div>  </div>
      {/* <div className="form-group newformgroup"><div id="lab">BloodGroup</div>
-      <div id="lab2"> <label htmlFor="bloodgrp">
+      <div id="lab2"> <label for="bloodgrp">
        <i class="zmdi zmdi-lamp"></i> 
        </label>
        <input type="text" name="bloodgrp" id="bloodgrp" autoComplete="off" value={userUpdate.bloodgrp} onChange={handleInputsUpdate}  placeholder="enter your bloodgroup"/>
        </div>
      </div> */}
      <div className="form-group newformgroup"><div id="lab">BloodGroup</div>
-      <div id="lab2"> <label htmlFor="bloodgrp">
+      <div id="lab2"> <label for="bloodgrp">
        <i class="zmdi zmdi-lamp"></i> 
        </label>
        <select name="bloodgrp" id="bloodgrp" onChange={handleInputsUpdate}>
@@ -153,7 +153,7 @@ return ReactDOM.createPortal (
         <i class="zmdi zmdi-male-female"></i>
         <div className="prt">
         <div className="p1">
-        <label htmlFor="gender">
+        <label for="gender">
                 <input
                   type="radio"
                   name="gender"
@@ -165,7 +165,7 @@ return ReactDOM.createPortal (
               </label>
               </div>
               <div className="p1">
-              <label htmlFor="gender">
+              <label for="gender">
                 <input
                   type="radio"
                   name="gender"
@@ -177,7 +177,7 @@ return ReactDOM.createPortal (
               </label>
               </div>
               <div className="p1">
-              <label htmlFor="gender">
+              <label for="gender">
                 <input
                   type="radio"
                   name="gender"
@@ -194,14 +194,14 @@ return ReactDOM.createPortal (
        </div>
 
      <div className="form-group newformgroup"><div id="lab">Age</div>
-      <div id="lab2"> <label htmlFor="age">
+      <div id="lab2"> <label for="age">
        <i class="zmdi zmdi-edit"></i>
         </label>
        <input type="number" name="age" id="age" min="1" autoComplete="off" value={userUpdate.age} onChange={handleInputsUpdate} placeholder="enter your age"/>
     
         </div></div>
         {/* <div className="form-group newformgroup"><div id="lab">Profile Pic</div>
-      <div id="lab2"> <label htmlFor="profpic">
+      <div id="lab2"> <label for="profpic">
        <i class="zmdi zmdi-image"></i>
         </label>
        <input type="file" name="profpic" id="profpic"  autoComplete="off" onChange={handleImageUpdate}  placeholder="profile pic"/>
@@ -209,35 +209,35 @@ return ReactDOM.createPortal (
         </div></div>
         */}
      <div className="form-group newformgroup"><div id="lab">Last Donated</div>
-      <div id="lab2"> <label htmlFor="ldate">
+      <div id="lab2"> <label for="ldate">
        <i class="zmdi zmdi-calendar"></i>
         </label>
        <input type="date" name="ldate" id="ldate" className="ld" autoComplete="off" value={userUpdate.ldate} onChange={handleInputsUpdate}  placeholder="last donated (dd/mm/yy)" />
     
       </div>  </div>
      <div className="form-group newformgroup"><div id="lab">State</div>
-      <div id="lab2"> <label htmlFor="state">
+      <div id="lab2"> <label for="state">
        <i class="zmdi zmdi-lock"></i>
         </label>
        <input type="text" name="state" id="state" autoComplete="off" value={userUpdate.state} onChange={handleInputsUpdate} placeholder="enter your state"/>
     
       </div>  </div>
      <div className="form-group newformgroup"><div id="lab">City</div>
-      <div id="lab2"> <label htmlFor="city">
+      <div id="lab2"> <label for="city">
        <i class="zmdi zmdi-gps-dot"></i>
         </label>
        <input type="text" name="city" id="city" autoComplete="off" value={userUpdate.city} onChange={handleInputsUpdate}  placeholder="confirm your city"/>
     
        </div> </div>
      <div className="form-group newformgroup"><div id="lab">Password</div>
-      <div id="lab2"> <label htmlFor="password">
+      <div id="lab2"> <label for="password">
        <i class="zmdi zmdi-gps-dot"></i> 
        </label>
        <input type="password" name="password" id="password" autoComplete="off" value={userUpdate.password} onChange={handleInputsUpdate}  placeholder="enter your password"/>
        </div>
      </div>
      <div className="form-group newformgroup"><div id="lab">Confirm Password</div>
-      <div id="lab2"> <label htmlFor="cpassword">
+      <div id="lab2"> <label for="cpassword">
        <i class="zmdi zmdi-lock"></i> 
        </label>
        <input type="password" name="cpassword" id="cpassword" autoComplete="off" value={userUpdate.cpassword} onChange={handleInputsUpdate}  placeholder="confirm your password"/>
