@@ -23,7 +23,7 @@ const handleImageUpdate=(e)=>{
             if(userUpdate.profpic!==""){
             formData.append("profpic",userUpdate.profpic,userUpdate.profpic.name);
             const res=await fetch("https://backendblood.onrender.com/update2",{
-             mode: 'no-cors',
+             
                 method: 'PUT',
               body:formData
             }).then((res)=>{res.json();
@@ -55,7 +55,7 @@ const handleImageUpdate=(e)=>{
 
       <div className="imfordiv">
        <div className="form-group newformgroup newformgroupyi"><div id="lab">Profile Pic</div>
-      <div id="lab2"> <label htmlFor="profpic">
+      <div id="lab2"> <label for="profpic">
        <i class="zmdi zmdi-image"></i>
         </label>
        <input type="file" name="profpic" id="profpic"  autoComplete="off" onChange={handleImageUpdate}  placeholder="profile pic"/>
